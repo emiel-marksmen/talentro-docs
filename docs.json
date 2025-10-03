@@ -28,17 +28,6 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:info@marksmen.nl"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "http://localhost:5173/"
-    }
   },
   "contextual": {
     "options": [
