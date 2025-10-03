@@ -8,6 +8,21 @@
     "dark": "#006FF1"
   },
   "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Informatie",
+        "groups": [
+          {
+            "group": "Talentro",
+            "pages": [
+              "index"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
