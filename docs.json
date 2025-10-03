@@ -14,48 +14,14 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Work in progress",
             "pages": [
-              "index",
-              "quickstart"
-            ]
-          },
-          {
-            "group": "Vacancies",
-            "pages": [
-              "vacancies/feeds",
-              "vacancies/offer"
-            ]
-          },
-          {
-            "group": "Acquisition",
-            "pages": [
-              "acquisition/campaigns"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "index"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://docs.talentro.ai/",
-          "icon": "book-open-cover"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
