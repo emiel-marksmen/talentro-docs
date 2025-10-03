@@ -1,0 +1,158 @@
+---
+title: Feeds
+description: Publiceer en deel je vacatures automatisch via Feeds — richting jobboards, aggregators, eigen werkenbij-site of partners.
+---
+
+# Feeds
+
+Met **Feeds** kun je vacatures **automatisch beschikbaar maken** voor externe kanalen zoals jobboards, aggregators, je eigen **werkenbij-site** of partnerbureaus. Je bepaalt **welke vacatures**, **welke velden**, **hoe vaak** er wordt bijgewerkt en **naar welke bestemming** de feed gaat.
+
+---
+
+## Wat is een feed?
+
+Een feed is een **leesbare lijst** van je vacatures in een vast formaat (bijv. XML of JSON) die externe systemen periodiek **inlezen**.
+Voordelen:
+
+- **Geen handwerk**: nieuwe/gewijzigde vacatures gaan automatisch mee
+- **Consistent**: alle kanalen krijgen dezelfde, actuele informatie
+- **Controle**: je kiest filters, velden, taal en branding
+
+---
+
+## Typische scenario’s
+
+- Vacatures automatisch doorzetten naar **jobboards/aggregators**
+- Een **werkenbij-vacaturelijst** op je eigen website tonen
+- Partners of bureaus **up-to-date** houden met actuele posities
+- Een feed voeden voor **campagne-automatisering** of rapportage
+
+---
+
+## Wat heb je nodig?
+
+- Minstens één **actieve vacature** in Talentro
+- Optioneel: logo/beeldmateriaal en contactgegevens
+- (Indien vereist door een kanaal) een **endpoint/URL** of **upload-methode**
+
+---
+
+## Hoe maak je een feed (stap-voor-stap)
+
+1. **Ga naar _Feeds_ → “Nieuwe feed”**
+2. **Geef een naam** (bijv. “Werkenbij NL” of “Indeed – NL”)
+3. **Kies bestemming/formaat**
+- *Werkenbij-site* (JSON), *Jobboard/aggregator* (meestal XML/JSON), *Partner*
+4. **Selecteer vacatures**
+- Kies alles, een **map** of **filters** (locatie, label, team, taal, publicatiestatus)
+5. **Bepaal velden & opmaak**
+- Titel, locatie, contract, salaris, beschrijving, tags, URL naar sollicitatie, media
+- Optioneel: **UTM-tags** toevoegen voor verkeer/bronmeting
+6. **Controle & voorbeeld**
+- Bekijk de **preview** (voorbeelditems) en pas zonodig velden/teksten aan
+7. **Publiceren**
+- Activeer de feed; je krijgt een **feed-URL** of **bestemmingskoppeling**
+8. **Planning**
+- Stel de **updatefrequentie** in (bijv. elk uur, 2× per dag, dagelijks)
+
+> Tip: Begin met een **testfeed** met beperkte set vacatures om het kanaal te laten verifiëren.
+
+---
+
+## Belangrijke instellingen
+
+### Filters
+- **Locatie** (stad/regio/land), **taal**, **label** (team/brand), **status** (alleen live)
+- Combineer filters om je feed **gericht** te maken (bijv. alleen **NL + Tech**).
+
+### Velden
+- Gebruik **duidelijke titels** en een **korte intro** in de beschrijving.
+- Voeg **salarisindicatie** en **USP’s** toe indien het kanaal dat ondersteunt.
+- **Sollicitatie-URL**: kies of je naar Talentro-formulier of externe ATS-pagina linkt.
+
+### UTM & tracking
+- Voeg UTM-parameters toe (bijv. `utm_source=indeed&utm_medium=feed&utm_campaign=vacatures`)
+- Hierdoor kun je in **Inzichten** en eigen analytics herkomst en conversie meten.
+
+### Planning & caching
+- Sommige kanalen halen 1–4× per dag op. Houd rekening met **verwerkingstijd**.
+- Grote wijzigingen? **Valideer** de feed opnieuw of overleg met het kanaal.
+
+---
+
+## Werkenbij-site feed (eigen website)
+
+Wil je vacatures op je eigen site tonen?
+
+- Kies bestemming **“Werkenbij-site (JSON)”**
+- Ontvang een **JSON-feed-URL** die je webbouwer kan gebruiken
+- Bevat: titel, locatie, korte beschrijving, URL naar detail/sollicitatie, tags, media
+- Ondersteunt **meertalige** velden indien je die in Talentro gebruikt
+
+> Beste resultaat: zorg voor **schone HTML** in beschrijvingen (kopjes, lijsten, geen embedded scripts).
+
+---
+
+## Kwaliteit & publicatieregels
+
+- **Volledigheid**: titel, locatie, contract en beschrijving zijn minimaal nodig
+- **Dubbele vacatures**: voorkom duplicaten (bijv. per standplaats brand/label)
+- **Afbeelding/logo**: verhoogt doorklik en herkenning
+- **Taalkundig**: publiceer in de **taal van het kanaal** (NL/EN)
+- **Privacy**: geen persoonsgegevens (PII) in velden die publiek worden gedeeld
+
+---
+
+## Beheer & monitoring
+
+- **Feed-status**: Actief, Gepauzeerd, Fout (met melding)
+- **Laatste update**: timestamp + aantal items
+- **Bestemmingen**: wie leest de feed en hoe vaak
+- **Logboek**: validatiefouten, geweigerde items, veldmapping waarschuwingen
+
+> Zie je **fouten**? Open de feed → **Validatie** voor details per vacature.
+
+---
+
+## Veelgestelde vragen
+
+**Mijn partner ziet niet alle vacatures**
+Controleer je **filters** en of de vacatures **gepubliceerd** zijn. Kijk ook of de **taal** klopt met de feed.
+
+**Het kanaal meldt een validatiefout**
+Open de feed → **Validatie** en bekijk het exacte veld (bijv. ontbrekend salaris, te lange titel). Los dit op in de vacature en **publiceer** opnieuw.
+
+**Hoe snel zijn veranderingen zichtbaar?**
+Meestal binnen enkele uren, afhankelijk van de **ophaalfrequentie** van het kanaal.
+
+**Kan ik meerdere feeds maken?**
+Ja. Maak per kanaal/regio/taal aparte feeds voor **betere controle en rapportage**.
+
+**Kunnen we sollicitaties terugmeten?**
+Ja, via **UTM** en door de **sollicitatie-URL** consequent te gebruiken. Bekijk resultaten in **Inzichten**.
+
+---
+
+## Best practices
+
+- **Één doel per feed** (bijv. “NL jobboards”) voor overzicht en kwaliteit
+- **Gebruik UTM’s** voor elk kanaal om verschillen te zien in prestaties
+- **Korte, scanbare beschrijvingen** met kopjes en bullets
+- **Regelmatige check** van validatielog en afgekeurde items
+- **Afzonderlijke feeds** voor _stage_, _junior_, _senior_ of **regio’s** als volumes hoog zijn
+
+---
+
+## Problemen oplossen
+
+- **Feed-URL werkt niet**: controleer of de feed **Actief** is en of je de **juiste omgeving** gebruikt (bijv. sandbox vs. productie).
+- **Te weinig items**: filters te strak? Vacatures wel **gepubliceerd**?
+- **Kanaal leest niet in**: deel de feed-URL opnieuw en vraag naar het **volgende ophaalmoment**.
+- **Layout op werkenbij-site** rommelt: vraag je webbouwer de **JSON-velden** correct te mappen en HTML te **sanitiseren**.
+
+---
+
+## Klaar om te starten?
+
+Ga naar **Feeds → Nieuwe feed**, kies je bestemming en publiceer.
+Hulp nodig met veldmapping of kanaalrichtlijnen? Neem contact op via **Help & Support**.

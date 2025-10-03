@@ -1,80 +1,172 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: Quickstart
+description: In 20 minuten live met Talentro — vacatures publiceren, campagnes starten en kandidaten beheren.
 ---
 
-## Get started in three steps
+# Quickstart
 
-Get your documentation site running locally and make your first customization.
+Deze Quickstart is voor **gebruikers/klanten** (geen technische kennis nodig).
+Volg de stappen en zet je eerste vacature en campagne **binnen 20 minuten** live.
 
-### Step 1: Set up your local environment
+<Callout>
+    We raden aan om dit samen met een collega te doen: één persoon zet de instellingen klaar, de ander controleert de inhoud.
+</Callout>
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+---
 
-### Step 2: Deploy your changes
+## Wat heb je nodig?
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+<Checklist>
+    <Check>Een Talentro-account en toegang tot je organisatie</Check>
+    <Check>Een voorbeeldvacature (titel, locatie, contracttype, salarisindicatie)</Check>
+    <Check>Toegang tot je ATS of social kanalen (optioneel, voor koppelingen)</Check>
+    <Check>Budget voor een testcampagne (mag laag zijn)</Check>
+</Checklist>
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+---
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+## Stap 1 — Je omgeving instellen
 
-### Step 3: Go live
+<Steps>
+    <Step title="Profiel & organisatie">
+        Ga naar **Instellingen → Organisatie** en voeg je **bedrijfsnaam**, **logo** en **huisstijl** toe.
+        <small>Dit zorgt voor herkenning in dashboards, mails en deelpagina’s.</small>
+    </Step>
+    <Step title="Team uitnodigen">
+        Open **Instellingen → Team** en klik **Uitnodigen**.
+        Rollen:
+        - **Beheerder**: alles beheren (instellingen, facturatie, automatiseringen)
+        - **Recruiter**: vacatures, campagnes en kandidaten
+        - **Lezer**: alleen inzage (rapportage)
+    </Step>
+    <Step title="Koppelingen (optioneel)">
+        Ga naar **Integraties** en koppel je **ATS** en/of **social kanalen**.
+        Kies wat je wilt synchroniseren: vacatures, kandidaten of beide. Je kunt dit later altijd aanpassen.
+    </Step>
+</Steps>
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+---
 
-## Next steps
+## Stap 2 — Vacature toevoegen of importeren
 
-Now that you have your docs running, explore these key features:
+<Tabs>
+    <Tab title="Handmatig toevoegen">
+        1) Ga naar **Vacatures → Nieuwe vacature**.
+        2) Vul **titel**, **locatie**, **uren**, **salaris** (indien bekend) en **beschrijving** in.
+        3) Voeg 3–5 **USP’s** toe (bijv. team, impact, secundaire voorwaarden).
+        4) **Publiceer** of **Opslaan als concept**.
+    </Tab>
+    <Tab title="Import vanuit ATS">
+        1) Zorg dat je ATS is gekoppeld bij **Integraties**.
+        2) Ga naar **Vacatures → Importeren** en selecteer je ATS-bron.
+        3) Kies de vacatures die je wil synchroniseren en bevestig.
+    </Tab>
+</Tabs>
 
-<CardGroup cols={2}>
+<Callout type="info">
+    Tip: gebruik **sjablonen** om sneller consistente vacatureteksten te maken. Je vindt ze bij **Vacatures → Sjablonen**.
+</Callout>
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
+---
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
+## Stap 3 — Start je eerste campagne
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
+<Steps>
+    <Step title="Kies je doel">
+        Ga naar **Campagnes → Nieuwe campagne**. Selecteer één of meerdere vacatures.
+        Doelopties: **Bereik**, **Kliks** of **Sollicitaties**.
+    </Step>
+    <Step title="Kanalen & doelgroep">
+        Kies je kanalen (bijv. jobboards, social, performance).
+        Stel je doelgroep kort in (locatie, ervaring, taal). Talentro doet slimme suggesties.
+    </Step>
+    <Step title="Budget & looptijd">
+        Voer je **dagbudget** of **totaalbudget** in en kies de looptijd.
+        Je ziet direct een **verwachte impact** (indicatief).
+    </Step>
+    <Step title="Controleren & activeren">
+        Controleer samenvatting → klik **Start campagne**.
+        De campagne gaat live en optimaliseert automatisch.
+    </Step>
+</Steps>
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
+---
 
-</CardGroup>
+## Stap 4 — Kandidaten beheren
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+Ga naar **Kandidaten** voor één overzicht van alle reacties.
+
+- **Inbox**: nieuwe binnenkomende kandidaten
+- **Pijplijn**: verplaats kandidaten door je stappen (bijv. *Nieuw → Gesprek → Aanbod*)
+- **Acties**: notitie, e-mail sturen, doorzetten naar ATS
+
+<Callout type="success">
+    Automatiseer je ontvangstbevestiging: **Automatiseringen → Nieuwe regel → “Nieuwe kandidaat” → “Stuur e-mail”**.
+</Callout>
+
+---
+
+## Stap 5 — Automatiseringen (tijdwinst)
+
+Een paar eenvoudige regels schelen veel handwerk:
+
+- **Vacature gepubliceerd → Start campagne**
+- **Nieuwe kandidaat → Sync naar ATS + stuur bevestiging**
+- **Campagne eindigt → Exporteer rapport naar e-mail**
+
+Ga naar **Automatiseringen → Nieuwe regel** en kies een **trigger** en **actie**.
+
+---
+
+## Stap 6 — Resultaten & rapportage
+
+Open **Inzichten** om je prestaties te volgen:
+
+- **Bereik, klikken, sollicitaties** per kanaal
+- **Kosten per sollicitatie** en best presterende kanalen
+- **Trends** per vacature of periode
+
+Je kunt dashboards **filtreren** en **exporteren**.
+
+---
+
+## Troubleshooting
+
+<Details title="Ik zie geen vacatures na ATS-koppeling">
+    Controleer in **Integraties** of vacature-synchronisatie actief is en of je de juiste bron hebt geselecteerd. Klik daarna **Nu synchroniseren**.
+</Details>
+
+<Details title="Mijn campagne blijft in concept staan">
+    Open de campagne en controleer of alle **vereiste velden** zijn ingevuld (budget, looptijd, kanalen). Klik vervolgens **Start campagne**.
+</Details>
+
+<Details title="Ik ontvang geen kandidaten in de inbox">
+    Kijk bij **Koppelingen** of sollicitatieformulieren/kanalen aan de juiste vacature zijn gekoppeld. Controleer ook je **Automatiseringen** op eventuele filters.
+</Details>
+
+<Details title="Teamgenoot kan niet alles zien">
+    Controleer de **rol** bij **Instellingen → Team**. Pas eventueel aan naar *Recruiter* of *Beheerder*.
+</Details>
+
+---
+
+## Klaar? Dit zijn mooie volgende stappen
+
+<Cards>
+    <Card title="Sjablonen & huisstijl" href="/vacatures/sjablonen" icon="file-text">
+        Maak sjablonen voor consistente teksten en visuals.
+    </Card>
+    <Card title="Meer kanalen koppelen" href="/integraties" icon="merge">
+        Voeg extra jobboards of socials toe voor meer bereik.
+    </Card>
+    <Card title="Geavanceerde automatiseringen" href="/automatiseringen/regels" icon="sparkles">
+        Bouw regels op basis van status, bron of tags.
+    </Card>
+    <Card title="Dashboard op maat" href="/inzichten" icon="bar-chart-2">
+        Maak een weergave voor management of hiring managers.
+    </Card>
+</Cards>
+
+<Callout type="info">
+    Hulp nodig? Open **Help & Support** in de app voor FAQ, chat en het plannen van een korte onboarding.
+</Callout>
