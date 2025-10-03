@@ -8,21 +8,6 @@
     "dark": "#006FF1"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Work in progress",
-            "pages": [
-              "index"
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
